@@ -27,11 +27,10 @@ pipeline {
 					}
 				}
 			}
-		}
 		stage("deploy") {
 			steps {
-			script {
-				gv.deployApp()
+				script {
+					gv.deployApp()
 			}
 		}
 	}
